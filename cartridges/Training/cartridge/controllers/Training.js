@@ -1,9 +1,9 @@
 'use strict';
 
 var server = require('server');
-var cache = require('*/cartridge/scripts/middleware/cache');
+//var cache = require('*/cartridge/scripts/middleware/cache');
 
-server.get('ShowBasket', cache.applyDefaultCache, function (req, res, next) {
+server.get('ShowBasket', function (req, res, next) {
   var BasketMgr = require('dw/order/BasketMgr');
   var basket = BasketMgr.getCurrentBasket();
   var info = [];
