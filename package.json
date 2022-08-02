@@ -1,0 +1,21 @@
+{
+  "name": "Training",
+  "version": "0.0.1",
+  "description": "New overlay cartridge",
+  "main": "index.js"
+  ,
+  "scripts": {
+    "compile:js": "sgmf-scripts --compile js",
+    "upload": "sgmf-scripts --upload",
+    "uploadCartridge": "sgmf-scripts --uploadCartridge Training",
+    "watch": "sgmf-scripts --watch",
+    "watch:static": "sgmf-scripts --watch static"
+  },
+  "devDependencies": {
+    "sgmf-scripts": "^2.4.1"
+  },
+  "paths": {
+    "base": "../storefront-reference-architecture/cartridges/app_storefront_base/"
+  }
+
+}

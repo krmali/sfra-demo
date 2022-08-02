@@ -1,0 +1,18 @@
+<isif condition="${pdict.productsInfo.isEmpty()}">
+  <span>no products in basket</span>
+  <iselse>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Quantity</th>
+      </tr>
+      <isloop iterator="${pdict.productsInfo}" alias="item">
+        <tr>
+          <td>${item.id}</td>
+          <td>${item.name}</td>
+          <td>${item.quantity}</td>
+        </tr>
+      </isloop>
+    </table>
+</isif>
